@@ -32,7 +32,7 @@ function DoctorReview() {
       useEffect(() => {
         const getNurses = async () => {
           await axios
-            .get("http://localhost:4451/nurse/get-allNurses")
+            .get("https://hmsbackend-drra.onrender.com/nurse/get-allNurses")
             .then((response) => {
               
               setNurses(response.data);
@@ -52,7 +52,7 @@ function DoctorReview() {
 
       const handleAddMessage = (e) =>{
         e.preventDefault();
-        axios.post("http://localhost:4451/doctor/add-message",{email , message ,from})
+        axios.post("https://hmsbackend-drra.onrender.com/doctor/add-message",{email , message ,from})
         .then(() =>{
           Swal.fire({
             icon: "success",

@@ -21,7 +21,7 @@ function SignUp() {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const res = await axios.post("http://localhost:4451/auth/register", data, {
+          const res = await axios.post("https://hmsbackend-drra.onrender.com/auth/register", data, {
             headers: { "Content-Type": "application/json" },
           });
       
