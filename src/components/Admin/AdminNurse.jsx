@@ -123,13 +123,13 @@ function AdminNurse() {
                           {index + 1}
                         </td>
                         <td scope="col" className="px-6 py-3">
-                          {item.name}
+                          {item?.name || "No Name"}
                         </td>
                         <td scope="col" className="px-6 py-3">
-                          {item.ward}
+                          {item?.ward || "No Ward"}
                         </td>
                         <td scope="col" className="px-6 py-3">
-                          {item.department.name}
+                          {item?.department?.name || "No Department"}
                         </td>
                         
                       </tr>
